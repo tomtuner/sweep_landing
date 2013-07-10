@@ -1,18 +1,57 @@
-
+<div id="contact-section">
 <%= form_for @message, url: { action: "create" } do |f| %>
 	<% @message.errors.full_messages.each do |msg| %>
       <p><%= msg %></p>
-   <% end %>  <p>
+   <% end %>
+   <div class="align-left" id="contact-left">
+   <article>
+   <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
+	</article>
+    <article>
   <p>
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </p>
+	</article>
+	</div>
+	<div class="align-right" id="contact-right">
+  <article>
   <p>
     <%= f.label :content, "Message" %><br />
     <%= f.text_area :content %>
   </p>
+	</article>
   <p><%= f.submit "Send Message" %></p>
+</div>
 <% end %>
+</div>
+<!-- End of Contact Section -->
+
+<div id="about-section">
+	<div class="align-left" id>
+		<!-- <img height=200 width=100 /> -->
+		<article>
+			Thomas DeMeo
+		</article>
+		
+	</div>
+	<article class="align-left">
+		Thomas is the head of development at Sweep. With a degree in Computer Engineering at RIT, Thomas has built software systems and applications for his alma mater his community and some of the largest companies in the world. In his free time, Thomas loves cooking and traveling.
+	</article>
+	<!-- <article class="align-left"> -->
+		<!-- Thomas DeMeo is so awesome. -->
+	<!-- </article> -->
+	<article class="align-right">
+		Ian Young is ridiculous.
+	</article>
+	<div class="align-right">
+		<!-- <img height=200 width=100 /> -->
+		<article>
+			Ian Young
+		</article>
+	</div>
+</div>
+<!-- End of About Section -->
