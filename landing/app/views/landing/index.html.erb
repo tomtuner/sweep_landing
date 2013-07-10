@@ -1,3 +1,6 @@
+<div id="product-section">
+	
+</div>
 <div id="contact-section">
 <%= form_for @message, url: { action: "create" } do |f| %>
 	<% @message.errors.full_messages.each do |msg| %>
@@ -31,27 +34,28 @@
 <!-- End of Contact Section -->
 
 <div id="about-section">
-	<div class="align-left" id>
+	<div class="align-left" id="about-left">
 		<!-- <img height=200 width=100 /> -->
 		<article>
 			Thomas DeMeo
 		</article>
-		
+		<article class="align-left text-column" id="thomas">
+			Thomas is the head of development at Sweep. With a degree in Computer Engineering at RIT, Thomas has built software systems and applications for his alma mater his community and some of the largest companies in the world. In his free time, Thomas loves cooking and traveling.
+		</article>
 	</div>
-	<article class="align-left">
-		Thomas is the head of development at Sweep. With a degree in Computer Engineering at RIT, Thomas has built software systems and applications for his alma mater his community and some of the largest companies in the world. In his free time, Thomas loves cooking and traveling.
-	</article>
+	
 	<!-- <article class="align-left"> -->
 		<!-- Thomas DeMeo is so awesome. -->
 	<!-- </article> -->
-	<article class="align-right">
-		Ian Young is ridiculous.
-	</article>
-	<div class="align-right">
+	<div class="align-right" id="about-right">
 		<!-- <img height=200 width=100 /> -->
 		<article>
 			Ian Young
 		</article>
+		<article class="align-right text-column" id="ian">
+			Ian is the head of operations for Sweep. Ian holds degrees in Economics and Finances from RIT, and has built both financial algorithms and sales strategies for a number of mutual funds, financial services firms, and large corporations. Ian enjoys making music and learning languages.
+		</article>
 	</div>
+	
 </div>
 <!-- End of About Section -->
