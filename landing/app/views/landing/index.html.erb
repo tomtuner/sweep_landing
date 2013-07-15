@@ -1,61 +1,105 @@
-<div id="product-section">
-	
-</div>
-<div id="contact-section">
-<%= form_for @message, url: { action: "create" } do |f| %>
-	<% @message.errors.full_messages.each do |msg| %>
-      <p><%= msg %></p>
-   <% end %>
-   <div class="align-left" id="contact-left">
-   <article>
-   <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-	</article>
-    <article>
-  <p>
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </p>
-	</article>
+<div class="page-fold" id="product-section">
+	<div class="row">
+		<div class="centered">
+			<section class="headline">
+				<h3>Tracking social engagement. One student at a time.</h3>
+				<p class="subheader centered">
+					We're the little lines that connect the dots. If you're not quite sure how your website can get the response you want, leave it to us. We've worked with clients of all shapes and sizes, hand-crafting applications that consistently turn ideas into profitable and effective businesses. Headquartered in Dayton, Ohio, our expert team of designers, developers, and project managers offer all the services you need to start growing your business today.
+				</p>
+			</section>
+		</div>
 	</div>
-	<div class="align-right" id="contact-right">
-  <article>
-  <p>
-    <%= f.label :content, "Message" %><br />
-    <%= f.text_area :content %>
-  </p>
-	</article>
-  <p><%= f.submit "Send Message" %></p>
+	<!-- End of Row -->
+	<div class="badges centered">
+		<div class="first">
+			<div>
+				<div class="mobile badge"></div>
+				<h3>Mobile</h3>
+				<p>We use seasoned open source technologies (primarily Ruby on Rails). and Agile methodology to build sustainable products.</p>
+			</div>
+		</div>
+		<div class="second">
+			<div>
+				<div class="graph badge"></div>
+				<h3>Analytics</h3>
+				<p>We use seasoned open source technologies (primarily Ruby on Rails). and Agile methodology to build sustainable products.</p>
+			</div>
+		</div>
+	</div>
+	<!-- End of Badges -->
 </div>
-<% end %>
+<div class="page-fold" id="contact-section">
+	<div class="width-50 center">
+	<%= form_for @message, url: { action: "create" } do |f| %>
+		<% @message.errors.full_messages.each do |msg| %>
+	      <p><%= msg %></p>
+	   <% end %>
+	   <div class="align-left" id="contact-left">
+	   <article>
+	   <p>
+	    <%= f.label :name %><br />
+	    <%= f.text_field :name %>
+	  </p>
+		</article>
+	    <article>
+	  <p>
+	    <%= f.label :email %><br />
+	    <%= f.text_field :email %>
+	  </p>
+		</article>
+		</div>
+		<div class="align-left" id="contact-right">
+	  <article>
+	  <p>
+	    <%= f.label :content, "Message" %><br />
+	    <%= f.text_area :content %>
+	  </p>
+		</article>
+	  <p><%= f.submit "Send Message" %></p>
+	</div>
+	<% end %>
+	</div>
 </div>
 <!-- End of Contact Section -->
 
-<div id="about-section">
-	<div class="align-left" id="about-left">
-		<!-- <img height=200 width=100 /> -->
-		<article>
-			Thomas DeMeo
-		</article>
-		<article class="align-left text-column" id="thomas">
-			Thomas is the head of development at Sweep. With a degree in Computer Engineering at RIT, Thomas has built software systems and applications for his alma mater his community and some of the largest companies in the world. In his free time, Thomas loves cooking and traveling.
-		</article>
+<div class="page-fold" id="about-section">
+	<div class="abouts centered">
+		<div class="first">
+			<div>
+				<div class="thomas about"></div>
+				<h3>Thomas DeMeo</h3>
+				<p>Thomas is the head of development at Sweep. With a degree in Computer Engineering at RIT, Thomas has built software systems and applications for his alma mater his community and some of the largest companies in the world. In his free time, Thomas loves cooking and traveling.</p>
+			</div>
+		</div>
+		<div class="second">
+			<div>
+				<div class="ian about"></div>
+				<h3>Ian Young</h3>
+				<p>Ian is the head of operations for Sweep. Ian holds degrees in Economics and Finances from RIT, and has built both financial algorithms and sales strategies for a number of mutual funds, financial services firms, and large corporations. Ian enjoys making music and learning languages.</p>
+			</div>
+		</div>
 	</div>
+	<!-- End of Badges -->
+	<!-- <div class="row"> -->
+		<!--
+		<div class="align-left" id="about-left">
+			<article>
+				Thomas DeMeo
+			</article>
+			<article class="align-left text-column" id="thomas">
+				Thomas is the head of development at Sweep. With a degree in Computer Engineering at RIT, Thomas has built software systems and applications for his alma mater his community and some of the largest companies in the world. In his free time, Thomas loves cooking and traveling.
+			</article>
+		</div>
 	
-	<!-- <article class="align-left"> -->
-		<!-- Thomas DeMeo is so awesome. -->
-	<!-- </article> -->
-	<div class="align-right" id="about-right">
-		<!-- <img height=200 width=100 /> -->
-		<article>
-			Ian Young
-		</article>
-		<article class="align-right text-column" id="ian">
-			Ian is the head of operations for Sweep. Ian holds degrees in Economics and Finances from RIT, and has built both financial algorithms and sales strategies for a number of mutual funds, financial services firms, and large corporations. Ian enjoys making music and learning languages.
-		</article>
+		<div class="align-right" id="about-right">
+			<article>
+				Ian Young
+			</article>
+			<article class="align-right text-column" id="ian">
+				Ian is the head of operations for Sweep. Ian holds degrees in Economics and Finances from RIT, and has built both financial algorithms and sales strategies for a number of mutual funds, financial services firms, and large corporations. Ian enjoys making music and learning languages.
+			</article>
+		</div>
 	</div>
-	
+	<!-- End of Row -->
 </div>
 <!-- End of About Section -->

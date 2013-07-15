@@ -3,7 +3,7 @@
 html, body, div, form, fieldset, legend, label, ul, ol, li, h1, h2, h3, h4, h5, h6, blockquote, footer, header, nav {
   margin: 0;
   padding: 0;
-	font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	font-family: Helvetica, Arial, Sans-Serif;
 }
 
 table {
@@ -190,6 +190,7 @@ h2 {
   font-size: 2em;
   font-weight: 700;
   margin: .3em 0 .2em 0;
+  color: #0D0F20;
 }
 
 h3 {
@@ -217,7 +218,7 @@ h6 {
 }
 
 p {
-  font-family: Georgia, "Times New Roman", Times, serif;
+/*  font-family: Georgia, "Times New Roman", Times, serif;*/
   font-size: 1em;
   margin: 0 0 1.5em 0;
   padding: 0;
@@ -336,6 +337,99 @@ ul.highlight {
   max-width: 960px;
 }
 
+.row {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 62.5em;
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	text-align: center;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+/*	text-align: center;*/
+}
+
+.subheader {
+/*	color: #58595B;*/
+/*	color: #D3D3D3;*/
+	color: #434343;
+	font-size: .9375em;
+	line-height: 1.5em;
+	font-weight: lighter;
+	max-width: 60em;
+}
+.about, .badges {
+/*	padding-bottom: 3.125em;*/
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 50em;
+	
+}
+
+.badges .badge.graph {
+	background-image: url('/assets/analytics_circle_200.png');
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+	width: 200px;
+}
+
+.badges .badge.mobile {
+	background-image: url('/assets/mobile_circle_200.png');
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+	width: 200px;
+}
+
+.abouts .about.thomas {
+	background-image: url('/assets/analytics_circle_200.png');
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+	width: 200px;
+}
+
+.abouts .about.ian {
+	background-image: url('/assets/mobile_circle_200.png');
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+	width: 200px;
+}
+
+.width-50 {
+	width: 50%;
+}
+
+.badges .first > div, .badges .second > div, .abouts .first > div, .abouts .second > div {
+	float: left;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.badges .first > div > h3, .badges .second > div > h3, .abouts .first > div > h3, .abouts .second > div > h3 {
+	margin-top: 1.0em;
+}
+
 .light-blue-button {
    border-top: 1px solid #96d1f8;
    background: #65a9d7;
@@ -398,10 +492,13 @@ ul.highlight {
    background: #1b435e;
 }
 
+.page-fold {
+	min-height: 31em;
+	padding: 1em;
+}
+
 #product-section {
-	background-color: #EC4D45;
-	height: 375px;
-	padding-top: 15px;
+	background-color: #FF9575;
 	border-top: solid 1px #D3D3D3;
 	border-bottom: solid 1px #D3D3D3;
 	box-shadow: 0px 2px 2px #D3D3D3;
@@ -410,17 +507,21 @@ ul.highlight {
 }
 
 #contact-left {
-	margin-left: 30%;
+/*	margin-left: 30%;*/
+	width: 40%;
 }
 
 #contact-right {
-	margin-right: 30%;
+/*	margin-right: 30%;*/
+	width: 40%;
 }
 
 #contact-section {
 	background-color: #EDEDED;
-	height: 375px;
-	margin-top: 20px;
+/*	padding-top: 1.5em;	*/
+	min-height: 22em;
+	margin-top: 1.5em;
+/*	margin: 0 auto;*/
 }
 
 .text-column {
@@ -428,8 +529,8 @@ ul.highlight {
 }
 
 #about-section {
-	padding-top: 20px;
-	height: 375px;
+	padding-top: 4em;
+/*	height: 375px;*/
 	background-color: #FFFFFF;
 	border-top: solid 1px #D3D3D3;
 	border-bottom: solid 1px #D3D3D3;
@@ -438,10 +539,36 @@ ul.highlight {
 	-moz-box-shadow: 0px -2px 2px #D3D3D3;
 }
 
-#about-left {
-	margin-left: 15%;
-}
-
-#about-right {
-	margin-right: 15%;
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+	.badges .first > div, .badges .second > div, .abouts .first > div, .abouts .second > div {
+/*		position: relative;*/
+		padding-left: .9375em;
+		padding-right: .9375em;
+		width: 83.33333%;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+	
+	#contact-right, #contact-left {
+/*		margin-left: 2em;*/
+/*		margin-right: 2em;*/
+		margin: 0 auto;
+		width: 50%;
+		float: none;
+	}
+	
+	#contact-section {
+/*		padding-right: 2em;*/
+/*		padding-left: 2em;*/
+	}
+	
+	#gray-bar {
+		background-color: #323232;
+		height: 44px;
+	}
+	
+	#product-section {
+/*		height: 44em;*/
+	}
 }
