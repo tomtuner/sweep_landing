@@ -308,9 +308,9 @@ ul.highlight {
   width: 25%;
 }
 
-.third {
+/*.third {
   width: 33.3%;
-}
+}*/
 
 .two-thirds {
   width: 66.7%;
@@ -379,6 +379,15 @@ ul.highlight {
 	
 }
 
+.badges .badge.simple {
+	background-image: url('/assets/simple_circle_200.png');
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	height: absolutepx;
+	width: 200px;
+}
+
 .badges .badge.graph {
 	background-image: url('/assets/analytics_circle_200.png');
 	background-repeat: no-repeat;
@@ -419,6 +428,13 @@ ul.highlight {
 	width: 50%;
 }
 
+.badges .third > div {
+/*	float: left;*/
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .badges .first > div, .badges .second > div, .abouts .first > div, .abouts .second > div {
 	float: left;
 	width: 50%;
@@ -426,7 +442,7 @@ ul.highlight {
 	margin-right: auto;
 }
 
-.badges .first > div > h3, .badges .second > div > h3, .abouts .first > div > h3, .abouts .second > div > h3 {
+.badges .first > div > h3, .badges .second > div > h3, .badges .third > div > h3, .abouts .first > div > h3, .abouts .second > div > h3 {
 	margin-top: 1.0em;
 }
 
@@ -504,6 +520,7 @@ ul.highlight {
 	box-shadow: 0px 2px 2px #D3D3D3;
 	-webkit-box-shadow: 0px 2px 2px #D3D3D3;
 	-moz-box-shadow: 0px 2px 2px #D3D3D3;	
+	overflow: hidden;
 }
 
 #contact-left {
