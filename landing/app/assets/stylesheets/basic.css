@@ -39,6 +39,10 @@ footer, header, nav, section {
   display: block;
 }
 
+.right {
+	float: right;
+}
+
 /* mixins */
 /* dimensions */
 /* colours */
@@ -384,7 +388,7 @@ ul.highlight {
 	background-repeat: no-repeat;
 	margin-left: auto;
 	margin-right: auto;
-	height: absolutepx;
+	height: 200px;
 	width: 200px;
 }
 
@@ -513,6 +517,14 @@ ul.highlight {
 	padding: 1em;
 }
 
+#footer {
+	min-height: 15.5em;
+	background: #323232;
+	color: #FFFFFF;
+}
+
+
+
 #product-section {
 	background-color: #FF9575;
 	border-top: solid 1px #D3D3D3;
@@ -588,4 +600,10 @@ ul.highlight {
 	#product-section {
 /*		height: 44em;*/
 	}
+	
+	#footer-nav {
+		width: 100%;
+/*		text-align: center;*/
+	}
 }
+
