@@ -1,10 +1,10 @@
-/* mobile */
+/*/* mobile */
 /* mixins */
 /* dimensions */
 /* colours */
 /* fonts */
 /* layout */
-body > header nav {
+/*body > header nav {
   clear: none;
   margin: .3em 0 0 1.2em;
   padding: 0;
@@ -43,8 +43,7 @@ body > article {
   max-width: 960px;
   overflow: hidden; }
 
-/* content elements */
-article.highlight {
+  article.highlight {
   margin: 5px 0 5px 0;
   width: 100%;
 
@@ -71,8 +70,7 @@ ul.highlight li h3 {
 ul.highlight li img {
   margin-right: .5em; }
 
-/* design */
-body > header h1 {
+  body > header h1 {
   font-size: 1.2em; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,8 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 ul li {
   margin: 0 .2em 0 2em; }
 
-/* components */
-#breadcrumbs p {
+  #breadcrumbs p {
   font-family: Georgia, "Times New Roman", Times, serif; }
 
 #pagination li {
@@ -111,3 +108,4 @@ div#slideshow ul li.previous {
   font-size: 1.2em; }
 div#slideshow ul li.next {
   font-size: 1.2em; }
+*/

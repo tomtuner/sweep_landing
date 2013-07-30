@@ -2,7 +2,7 @@
 /* mixins */
 /* dimensions */
 /* colours */
-/* fonts */
+/* fonts *//*
 body > header nav {
   clear: none;
   margin: .3em 0 0 1.2em;
@@ -42,7 +42,6 @@ body > article {
   max-width: 960px;
   overflow: hidden; }
 
-/* content elements */
 article.highlight {
   margin: 5px auto 5px auto;
   width: 50%;
@@ -55,7 +54,6 @@ article.highlight {
   article.highlight a {
   	  padding: 0.5em .2em 0.5em .3em;
   	  display: block;
-/* 	  max-width:20.0em; */
 
   }
   article.highlight img {
@@ -73,7 +71,6 @@ ul.highlight li h3 {
 ul.highlight li img {
   margin-right: .5em; }
 
-/* design */
 body > header h1 {
   font-size: 1.2em; }
 
@@ -84,7 +81,6 @@ h1, h2, h3, h4, h5, h6 {
 ul li {
   margin: 0 .2em 0 2em; }
 
-/* components */
 #breadcrumbs p {
   font-family: Georgia, "Times New Roman", Times, serif; }
 
@@ -117,4 +113,4 @@ div#slideshow ul li a:hover {
 div#slideshow ul li.previous {
   font-size: 1.2em; }
 div#slideshow ul li.next {
-  font-size: 1.2em; }
+  font-size: 1.2em; }*/

@@ -43,6 +43,17 @@ footer, header, nav, section {
 	float: right;
 }
 
+.bold {
+	font-weight: bold;
+}
+
+#full-logo {
+	background-image: url('/assets/logo_kanzu_small.png');
+	background-repeat: no-repeat;
+	height: 103px;
+	width: 200px;
+}
+
 /* mixins */
 /* dimensions */
 /* colours */
@@ -105,6 +116,11 @@ body > header h1:after {
   	body > header h1 a:hover {
 		color: #000C4F;
   	}
+    body > header #right-header {
+      display: block;
+      padding: 2.8em 2.0em;
+      margin: 10px 3px 3px 3px;
+  }
    body > article {
     clear: both;
     display: block;
@@ -388,7 +404,7 @@ ul.highlight {
 	background-repeat: no-repeat;
 	margin-left: auto;
 	margin-right: auto;
-	height: 200px;
+	height: 213px;
 	width: 200px;
 }
 
@@ -411,7 +427,7 @@ ul.highlight {
 }
 
 .abouts .about.thomas {
-	background-image: url('/assets/analytics_circle_200.png');
+	background-image: url('/assets/about_thomas.png');
 	background-repeat: no-repeat;
 	margin-left: auto;
 	margin-right: auto;
@@ -420,7 +436,7 @@ ul.highlight {
 }
 
 .abouts .about.ian {
-	background-image: url('/assets/mobile_circle_200.png');
+	background-image: url('/assets/about_ian.png');
 	background-repeat: no-repeat;
 	margin-left: auto;
 	margin-right: auto;
@@ -430,6 +446,10 @@ ul.highlight {
 
 .width-50 {
 	width: 50%;
+}
+
+.width-90 {
+	width: 90%;
 }
 
 .badges .third > div {
@@ -480,6 +500,28 @@ ul.highlight {
 .light-blue-button:active {
    border-top-color: #1b435e;
    background: #1b435e;
+}
+
+.yellow-button{
+	background: #FFCF73;
+	display: inline-block;
+	padding: 10px 20px 10px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px #999;
+	-webkit-box-shadow: 0 1px 3px #999;
+	text-shadow: 0 -1px 1px #222;
+	border-bottom: 1px solid #222;
+	position: relative;
+	cursor: pointer;
+}
+
+.yellow-button:hover {
+   background: #FFBD40;
 }
 
 .orange-button {
@@ -548,7 +590,7 @@ ul.highlight {
 #contact-section {
 	background-color: #EDEDED;
 /*	padding-top: 1.5em;	*/
-	min-height: 22em;
+	min-height: 25em;
 	margin-top: 1.5em;
 /*	margin: 0 auto;*/
 }
@@ -569,7 +611,7 @@ ul.highlight {
 }
 
 @media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
-	.badges .first > div, .badges .second > div, .abouts .first > div, .abouts .second > div {
+	.badges .first > div, .badges .second > div, .abouts .first > div, .abouts .second > div,  .abouts .third > div,  .badges .third > div {
 /*		position: relative;*/
 		padding-left: .9375em;
 		padding-right: .9375em;
@@ -582,7 +624,7 @@ ul.highlight {
 	#contact-right, #contact-left {
 /*		margin-left: 2em;*/
 /*		margin-right: 2em;*/
-		margin: 0 auto;
+/*		margin: 0 auto;*/
 		width: 50%;
 		float: none;
 	}
@@ -595,15 +637,42 @@ ul.highlight {
 	#gray-bar {
 		background-color: #323232;
 		height: 44px;
+		box-shadow: 0px 2px 2px #D3D3D3;
+		-webkit-box-shadow: 0px 2px 2px #D3D3D3;
+		-moz-box-shadow: 0px 2px 2px #D3D3D3;	
+		overflow: hidden;
 	}
 	
 	#product-section {
 /*		height: 44em;*/
-	}
+	} 
 	
 	#footer-nav {
 		width: 100%;
 /*		text-align: center;*/
+	}
+	
+	#form-wrapper {
+		width: 90%;
+		margin: none;
+	}
+	
+	body > header #right-header {
+		margin: 0;
+		padding: 2% 1% 2%;
+		float: left;
+	}
+	
+	#right-header ul li {
+		margin: none;
+	}
+	
+	.class {
+		clear: both;
+	}
+	
+	.footer {
+		width: 300px;
 	}
 }
 

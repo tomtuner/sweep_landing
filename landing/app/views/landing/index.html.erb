@@ -4,7 +4,7 @@
 			<section class="headline">
 				<h3>Tracking social engagement. One student at a time.</h3>
 				<p class="subheader centered">
-					We're redefining the college experience. If you're like us and know that college is more than textbooks and tests, then Sweep is the perfect fit. Our platform helps you identify the success of students, clubs, organizations, staff, departments, and other groups participating in activities and events on campus. For some, studies are everything. We want to help you motivate the other 99%.
+					We're redefining the college experience. If you're like us and know that college is more than textbooks and tests, then Sweep is the perfect fit. Our platform helps universities identify the success of students, clubs, organizations, staff, departments, and other groups participating in activities and events on campus. For some, studies are everything. We want to help you motivate the other <span class="bold">99%</span>.
 				</p>
 			</section>
 		</div>
@@ -36,7 +36,12 @@
 	<!-- End of Badges -->
 </div>
 <div class="page-fold" id="contact-section">
-	<div class="width-50 center">
+
+	<div id="form-wrapper" class="width-50 center">
+		<section class="headline">
+	
+			<h3>Join the conversation!</h3>
+		</section>
 	<%= form_for @message, url: { action: "create" } do |f| %>
 		<% @message.errors.full_messages.each do |msg| %>
 	      <p><%= msg %></p>
