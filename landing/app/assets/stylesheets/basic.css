@@ -518,7 +518,8 @@ ul.highlight {
 	border-bottom: 1px solid #222;
 	position: relative;
 	cursor: pointer;
-}
+	width: 60px;
+} 
 
 .yellow-button:hover {
    background: #FFBD40;
@@ -590,7 +591,7 @@ ul.highlight {
 #contact-section {
 	background-color: #EDEDED;
 /*	padding-top: 1.5em;	*/
-	min-height: 25em;
+/*	min-height: 25em; */
 	margin-top: 1.5em;
 /*	margin: 0 auto;*/
 }
@@ -658,13 +659,18 @@ ul.highlight {
 	}
 	
 	body > header #right-header {
-		margin: 0;
+		margin: 0 auto;
 		padding: 2% 1% 2%;
-		float: left;
+	}
+	
+	#right-header ul {
+		margin: 0 auto;
 	}
 	
 	#right-header ul li {
-		margin: none;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		clear: both;
 	}
 	
 	.class {
@@ -674,5 +680,14 @@ ul.highlight {
 	.footer {
 		width: 300px;
 	}
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+	#right-header {
+		width: 40%;
+		float:none;
+	}
+
 }
 
