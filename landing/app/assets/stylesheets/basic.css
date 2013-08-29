@@ -48,7 +48,7 @@ footer, header, nav, section {
 }
 
 #full-logo {
-	background-image: url('/assets/logo_kanzu_small.png');
+/*	background-image: url('/assets/logo_kanzu_small.png');*/
 	background-repeat: no-repeat;
 	height: 103px;
 	width: 200px;
